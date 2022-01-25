@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.upperBody {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.upperBody img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+
+.hours {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.hours .hoursHeader,
+.location .locationHeader {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.info .location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
