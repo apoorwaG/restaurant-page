@@ -20,6 +20,11 @@ body {
     margin: 20px 0;
 }
 
+.navbar {
+    display: flex;
+    column-gap: 20px;
+}
+
 .upperBody {
     display: flex;
     flex-wrap: wrap;
