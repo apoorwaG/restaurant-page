@@ -10,8 +10,9 @@ function loadHeaderImages() {
     upperBody.classList.add("upperBody");
 
     const imageSrcArr = [HeaderOne, HeaderTwo, HeaderThree];
+    let myIcon;
     for (let i = 0; i < 3; i++) {
-        const myIcon = new Image();
+        myIcon = new Image();
         myIcon.src = imageSrcArr[i];
         upperBody.appendChild(myIcon);
     }
