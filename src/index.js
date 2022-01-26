@@ -1,4 +1,4 @@
-import './style.css';
+import './css/style.css';
 
 import {loadHome} from './home';
 import {loadMenu} from './menu';
@@ -59,10 +59,19 @@ const displayController = (() => {
         
         clearContent();
 
-        if(newTab === "Menu"){
+        if(newTab === "Home"){
+            console.log("Loading home!");
+            loadHome();
+            currentTab = "Home";
+        } else if(newTab === "Menu") {
+            console.log("Loading menu!");
             loadMenu();
-        } else {
+            currentTab = "Menu";
+        }
+        else {
             // loadContact();
+            console.log("Loading contact!");
+            currentTab = "Contact";
         }
 
     }

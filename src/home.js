@@ -1,3 +1,4 @@
+import './css/home_style.css';
 import HeaderOne from './images/header.jpg';
 import HeaderTwo from './images/header_2.jpg';
 import HeaderThree from './images/header_3.jpg';

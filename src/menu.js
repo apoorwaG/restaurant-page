@@ -1,5 +1,5 @@
 function loadMenu() {
-    console.log("Loading Menu!");
+    // console.log("Loading Menu!");
 }
 
 export {
