@@ -1,7 +1,8 @@
 import './css/style.css';
 
-import {loadHome} from './home';
-import {loadMenu} from './menu';
+import { loadHome } from './home';
+import { loadMenu } from './menu';
+import { loadFooter } from './footer';
 
 const displayController = (() => {
 
@@ -46,7 +47,7 @@ const displayController = (() => {
     }
 
     function clearContent() {
-        const content = document.querySelector("#content");
+        const content = document.querySelector(".content");
         while (content.firstChild){
             content.removeChild(content.firstChild);
         }
@@ -78,6 +79,13 @@ const displayController = (() => {
 
     loadTitle();
     loadNavigation();
+
+    const content = document.querySelector("#content");
+    const contentSection = document.createElement("div");
+    contentSection.classList.add("content");
+    content.appendChild(contentSection);
+
     loadHome();
+    loadFooter();
 
 })();

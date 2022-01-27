@@ -1,40 +1,60 @@
 .drinks,
-.breakfast {
+.breakfast,
+.lunch {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .drinks .header,
-.breakfast .header {
+.breakfast .header,
+.lunch .header {
     font-style: italic;
     font-weight: bolder;
     font-size: larger;
     display: flex;
     align-items: center;
     column-gap: 20px;
+    margin-bottom: 10px;
 }
 
-.drinks img,
-.breakfast img {
+.drinks img {
     width: 50px;
 }
 
-.drinks .items {
+.breakfast img {
+    width: 150px;
+}
+
+.lunch img {
+    width: 100px;
+}
+
+
+.drinks .items,
+.breakfast .items,
+.lunch .items {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.drinks .items .item {
+.drinks .items .item,
+.breakfast .items .item,
+.lunch .items .item {
     display: flex;
     justify-content: space-between;
 }
 
-.items .item .dName {
+.items .item .dName,
+.items .item .name {
     font-weight: bold;
 }
 
 .left {
-    max-width: 900px;
+    width: 700px;
+}
+
+.breakfast,
+.lunch {
+    margin-top: 20px;
 }

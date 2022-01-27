@@ -5,7 +5,7 @@ import HeaderThree from './images/header_3.jpg';
 
 function loadHeaderImages() {
 
-    const element = document.querySelector("#content")
+    const element = document.querySelector(".content")
 
     const upperBody = document.createElement("div");
     upperBody.classList.add("upperBody");
@@ -76,7 +76,7 @@ function loadLocation(section) {
 }
 
 function loadInfo() {
-    const element = document.querySelector("#content");
+    const element = document.querySelector(".content");
     const infoSection = document.createElement("div")
     infoSection.classList.add("info");
 
