@@ -1,0 +1,40 @@
+.drinks,
+.breakfast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drinks .header,
+.breakfast .header {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.drinks img,
+.breakfast img {
+    width: 50px;
+}
+
+.drinks .items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.drinks .items .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items .item .dName {
+    font-weight: bold;
+}
+
+.left {
+    max-width: 900px;
+}
