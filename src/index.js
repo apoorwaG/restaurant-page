@@ -2,6 +2,7 @@ import './css/style.css';
 
 import { loadHome } from './home';
 import { loadMenu } from './menu';
+import { loadContact } from './contact';
 import { loadFooter } from './footer';
 
 const displayController = (() => {
@@ -72,6 +73,7 @@ const displayController = (() => {
         else {
             // loadContact();
             console.log("Loading contact!");
+            loadContact();
             currentTab = "Contact";
         }
 
