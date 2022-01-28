@@ -95,7 +95,7 @@ function loadDrinks(section) {
     const drinks = [
         new Item("Mojito", 2.99, "The mint and lime give it a cool, refreshing flavor, and the soda lightens it up with a fizzy crispness."),
         new Item("Manhattan", 3.99, "This delightful mix of rye or bourbon whiskey, sweet vermouth, and bitters has been adored for hundreds of years."),
-        new Item("Daiquiri", 5.99, "Just three ingredients with no fruit (other than lime) and no blender. Proper balance, fresh lime juice, and a an excelent white rum."),
+        new Item("Daiquiri", 5.99, "Just three ingredients with no fruit (other than lime) and no blender. Proper balance, fresh lime juice, and an excelent white rum."),
         new Item("Dry Martini", 8.99, "A cocktail made with gin and vermouth, and garnished with an olive or a lemon twist."),
         new Item("Old Fashioned", 6.99, "A cocktail made by muddling sugar with bitters and water, adding whiskey, and garnishing with orange slice or zest and a cocktail cherry.")
     ]
@@ -135,7 +135,6 @@ function loadLunch(section) {
 function loadMenu() {
     // console.log("Loading Menu!");
     const content = document.querySelector(".content");
-    console.log(content);
     const drinksSection = document.createElement("div");
     drinksSection.classList.add("drinks");
     loadDrinks(drinksSection);
@@ -149,11 +148,7 @@ function loadMenu() {
     lunchSection.classList.add("lunch");
     loadLunch(lunchSection);
 
-    const dinnerSection = document.createElement("div");
-    dinnerSection.classList.add("dinner");
-    // fill
-
-    const subSections = [drinksSection, breakfastSection, lunchSection, dinnerSection];
+    const subSections = [drinksSection, breakfastSection, lunchSection];
     subSections.forEach((section) => {
         content.appendChild(section);
     });
